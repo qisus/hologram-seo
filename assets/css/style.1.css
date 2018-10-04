@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------ MAIN STRUCTURE DEFINITIONEN ----------------- */
+
+* {
+	margin: 0;
+    padding: 0;
+}
+
+
+body, html{
+	height:100%;
+}
+
+
+body {
+	color: #fff;
+	font-family: 'Inconsolata', sans-serif;
+  	background: black;
+  	background-size: cover;
+	display: block;
+	
+}
+
+div {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+	margin: 0 0 20px;
+}
+section {
+	display: none; 
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+
+#content{
+	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav1 {
+	top: 1rem;
+	left: 1rem;
+	position:fixed;
+	text-transform: uppercase;
+	
+	
+}
+#nav1 img {
+	width: 100px;
+	
+}
+
+#nav2 {
+	position:fixed;
+	top: 1rem;
+	right: 1rem; 
+	line-height: 2rem;
+}
+.icons {
+	padding: 0 0 1rem 0;
+}
+
+#nav3 {
+	position:fixed;
+	bottom: 2rem;
+	text-transform: uppercase;
+	transform: rotate(270deg);
+}
+
+#nav4 {
+	position:fixed;
+	bottom: 1rem;
+	right: 1rem;
+	text-transform: uppercase;
+}
+
+/* ------------------ MAIN LINK DEFINITIONEN ----------------- */
+
+a:hover{
+	font-weight:bold;
+
+}
+
+a:link,a:visited{
+	font-weight:bold;
+	text-decoration:none;
+	color:#fff;
+	text-shadow: 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,1), 0 0 40px #f9557b, 0 0 70px #f9557b, 0 0 80px #f9557b, 0 0 100px #f9557b; /* neon purple */
+}
+
+
+/* ------------------ Result Diagram ----------------- */
+
+
+/* ------------------ FORM ----------------- */
+#intro{
+width: 55%;
+text-align: center;
+	
+}
+
+.form-analyze {
+	text-align: left;
+	background-color: rgba(255,255,255,.2);
+	 -webkit-appearance: none;
+	height: 60px;
+	border: 0;
+	max-width: 610px;
+	padding: 0 20px 0 30px;
+	flex: 1;
+}
+
+
+button {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	padding: 22px 18px;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+	width: 50%;
+}
+
+
+.formfield {
+		width: 50%;
+		background: #fff;
+		color: #000;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+		border: 0;
+		outline: 0;
+		padding: 22px 18px;
+	}
+/* ========== infotabs ========== */
+
+.infotab input {
+	display: none;
+}
+td, th { 
+	padding: 8px;
+	vertical-align:top;
+}
+	label {
+		display: inline-block;
+		margin: 0 0 -1px;
+		padding: 15px 25px;
+		font-weight: 600;
+		text-align: center;
+		color: #bbb;
+		border: 1px solid transparent;
+	  }
+	  
+	  label:before {
+		font-family: fontawesome;
+		font-weight: normal;
+		margin-right: 10px;
+	  }
+	  
+	  label[for*='1']:before { content: '\f1cb'; }
+	  label[for*='2']:before { content: '\f17d'; }
+	  label[for*='3']:before { content: '\f16b'; }
+	  label[for*='4']:before { content: '\f1a9'; }
+	  
+	  label:hover {
+		color: #888;
+		cursor: pointer;
+	  }
+	  
+	  input:checked + label {
+		color: #555;
+		border: 1px solid #ddd;
+		border-top: 2px solid orange;
+		border-bottom: 1px solid #fff;
+	  }
+	  
+	  #tab1:checked ~ #content1,
+	  #tab2:checked ~ #content2,
+	  #tab3:checked ~ #content3,
+	  #tab4:checked ~ #content4 {
+		display: block;
+	  }
+	  @media screen and (max-width: 650px) {
+		label {
+		  font-size: 0;
+		}
+		label:before {
+		  margin: 0;
+		  font-size: 18px;
+		}
+	  }
+	  
+	  @media screen and (max-width: 400px) {
+		label {
+		  padding: 15px;
+		}
+	  }
+/* ========== RESPONSIVE ========== */
+
+
+@media only screen and (max-width: 768px) {
+
+
+}

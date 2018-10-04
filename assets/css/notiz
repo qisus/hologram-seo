@@ -1,0 +1,219 @@
+<div class="container">
+  <div class="item box-long center"><h1>Seo Report</h1></div>
+  <div class="item box-long center"><p>Final Score Logo</p></div>
+  <div class="item box-long center"><p>Circle Diagrams</p></div>
+<!--SEO MOBILE-->
+  <div class="item box-long group-title">SEO MOBILE</div>
+  <div class="item-question test-question">Is your Site reachable?</div>
+  <div class="item-result">
+    <i class="fas fa-thermometer-full"></i>
+    <p>Your site https://susinspired.ch/ is alive.</p>
+    <i class="far fa-file-code"></i><p></p></div>
+ <!--SEO MOBILE INFO BOX--> 
+  <div class="item box-info">
+    <input id="tab1" type="radio" name="tabs" checked><label for="tab1">Mobile SEO</label>
+            <input id="tab2" type="radio" name="tabs"><label for="tab2">Mobile Index First</label>
+            <input id="tab3" type="radio" name="tabs"><label for="tab3">Our Tips</label>
+            <section id="content1"><img src="assets/img/screenshot.png" max-height="50%"><p>In short: the number of mobile searches is EXPLODING. In fact, 58% of all searches in Google are now done from a mobile device. Google is overhauling their entire algorithm so that it’s optimized for mobile users FIRST. Needless to say, “SEO” Now About Optimizing for “Mobile SEO”.</p></section>
+            <section id="content2"><img src="assets/img/screenshot.png" max-height="50%"><p>dfdfdfdf</p></section>
+            <section id="content3"><img src="assets/img/screenshot.png" max-height="50%"><p>dfdfdfdfdf</p></section>
+ <!--ENDSEO MOBILE INFO BOX--> 
+  </div>
+  <div class="item-question test-question">Does the Googlebot crawl all of your mobile content?</div>
+  <div class="item-result">*Screenshot* *Fetch Status*</div>
+  <div class="item-question test-question">Do you have a "mobile friendly" meta tag?</div>
+ <div class="item-result">
+    <i class="fas fa-thermometer-full"></i>
+    <p>Your site is using the meta viewport which allows the page to reflow content to match different screen sizes whether rendered on a small mobile phone or a large desktop monitor.</p>
+    <i class="far fa-file-code"></i><p></p></div>
+<!--SERP VIEW-->
+  <div class="item box-long group-title">SEO MOBILE</div>
+  <div class="item-question test-question">Is your Site reachable?</div>
+  <div class="item-result">
+    <i class="fas fa-thermometer-full"></i>
+    <p>Your site https://susinspired.ch/ is alive.</p>
+    <i class="far fa-file-code"></i><p></p></div>
+ <!--SEO MOBILE INFO BOX--> 
+  <div class="item box-info">
+    <input id="tab1" type="radio" name="tabs" checked><label for="tab1">Mobile SEO</label>
+            <input id="tab2" type="radio" name="tabs"><label for="tab2">Mobile Index First</label>
+            <input id="tab3" type="radio" name="tabs"><label for="tab3">Our Tips</label>
+            <section id="content1"><img src="assets/img/screenshot.png" max-height="50%"><p>In short: the number of mobile searches is EXPLODING. In fact, 58% of all searches in Google are now done from a mobile device. Google is overhauling their entire algorithm so that it’s optimized for mobile users FIRST. Needless to say, “SEO” Now About Optimizing for “Mobile SEO”.</p></section>
+            <section id="content2"><img src="assets/img/screenshot.png" max-height="50%"><p>dfdfdfdf</p></section>
+            <section id="content3"><img src="assets/img/screenshot.png" max-height="50%"><p>dfdfdfdfdf</p></section>
+ <!--ENDSEO MOBILE INFO BOX--> 
+  </div>
+  <div class="item-question test-question">Does the Googlebot crawl all of your mobile content?</div>
+  <div class="item-result">*Screenshot* *Fetch Status*</div>
+  <div class="item-question test-question">Do you have a "mobile friendly" meta tag?</div>
+ <div class="item-result">
+    <i class="fas fa-thermometer-full"></i>
+    <p>Your site is using the meta viewport which allows the page to reflow content to match different screen sizes whether rendered on a small mobile phone or a large desktop monitor.</p>
+    <i class="far fa-file-code"></i><p></p></div>
+  
+  
+  
+  
+  
+  
+  
+  
+</div><!--END CONTAINER-->
+
+
+
+class
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: auto;
+  margin:5%;
+}
+.item, .item-question, .item-result {
+  padding: 10px;
+  border: solid #2B7A78;
+}
+.box-long {
+  grid-column: 1 / 4;
+}
+
+.box-info {
+  grid-column: 3;
+  grid-row: 5 / 8;
+  background: #DEF2F1;
+}
+.box-big2 {
+  grid-column: 3 / 3;
+}
+.box-big3 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+}
+/*type*/
+.group-title{
+  text-transform: uppercase;
+  font-size: 2vw;
+   line-height: 2vw;
+   letter-spacing: 2px;
+   border-bottom: 2vw;
+   color:#feffff;
+  font-weight: 700;
+}
+.test-question{
+color: #feffff;
+font-size: .7vw;
+line-height: 30px;
+letter-spacing: 1px;
+
+}
+.test-question:first-letter {
+    font-size:         2em;
+    margin-bottom:     1em;
+    letter-spacing: 2px;
+  }
+/* Responsive */
+@media (max-width: 600px){
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .box-long, .box-info{
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+/* Layout */
+body {
+  padding: 10px;
+  font-family: sans-serif;
+  background-color: #3AAFA9;
+  color: #17252A;
+}
+title{
+  font-size: 1vw;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 5vw;
+   line-height: 4.2vw;
+   letter-spacing: 2px;
+   padding-bottom: 1vw;
+   color:#feffff;
+  font-weight: 700;
+}
+.center{
+ text-align: center; 
+}
+
+/* INFO TABS */
+section {
+  display: none;
+  padding: 20px 0 0;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-size: .7vw;
+line-height: 30px;
+letter-spacing: 1px;
+  text-align: center;
+  color: #17252A;
+}
+
+label:before {
+  font-family: fontawesome;
+  margin-right: 10px;
+  font-size:         2em;
+    margin-bottom:     1em;
+    letter-spacing: 2px;
+}
+
+label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16b'; }
+label[for*='4']:before { content: '\f1a9'; }
+
+label:hover {
+  color: #3AAFA9;
+  cursor: pointer;
+  border: 4px solid #2B7A78;
+}
+
+input:checked + label {
+  color: #3AAFA9;
+  border: 4px solid #feffff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+/* END INFO TABS */

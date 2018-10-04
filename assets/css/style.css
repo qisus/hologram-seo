@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------ MAIN STRUCTURE DEFINITIONEN ----------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body, html{
+	height:100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	color: #17252A;
+  line-height: 1;
+  background-color:#3aafa9;	
+}
+.dark{
+  color: #feffff;
+  
+}
+.light{
+	color: #17252A;
+}
+
+div {
+	box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+img {
+width:100%;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------------ FONT SIZES ----------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-size: 100%;
+}
+input, textarea, select {
+	font: inherit;
+  }
+
+  h1 {
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	vertical-align:bottom;
+  }
+  h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align:bottom;
+    padding-bottom:10px;
+    }
+
+
+  p {
+	font-size: 1em;
+	/* equivalent to 16px */
+	/* equivalent to 20px */
+  }
+  .fa {
+      display: inline-block;
+      font-size: 1em;
+  }
+
+  blockquote {
+	font-size: 1.25em;
+  }
+
+  @media (max-width: 600px) {
+	h1 {font-size: 2em;}
+	h2 {font-size: 1.5em;}
+	p {font-size: 1em;line-height: 1.375;}
+	blockquote {font-size: 1.5em;line-height: 1.45833333;}
+  }
+/* ------------------ FONT AWESOME ----------------- */
+.fa {
+  display: inline-block;
+  font-size: 1em; /*social icons */
+}
+.fa-thumbs-up, {
+    color:#2B7A78;
+  }
+.item .fa, .item .far{
+  font-size: 2em;
+  padding-bottom:1em;
+}
+
+/* ------------------ CUSTOM LAYOUT DEFINITION ----------------- */
+
+.center{
+	text-align: center; 
+   }
+.textright{
+  text-align: right;
+}
+ 
+    /* Border Design */
+	.grid-top{
+		border-top: 12px solid #2B7A78;
+		}
+		.grid-bottom{
+		border-bottom: 12px solid #2B7A78; 
+		}
+		.grid-right{
+		border-right: 12px solid #2B7A78; 
+		}
+		.grid-left{
+		border-left: 12px solid #2B7A78; 
+		}
+	.bg-blue{
+background-color:#18252a;
+	}
+	.bg-teal-dark{
+		background-color:#557c83;	
+	}
+	.bg-teal-light{
+		background-color:#3aafa9;	
+  }
+  .dark{
+    color: #feffff;
+    
+  }
+  .light{
+    color: #17252A;
+  }
+
+/* ------------------ MAIN LINK DEFINITIONEN ----------------- */
+
+a:hover{
+	font-weight:bold;
+}
+a:link,a:visited{
+	font-weight:bold;
+	text-decoration:none;
+	color:#fff;
+	/* text-shadow: 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,1), 0 0 40px #f9557b, 0 0 70px #f9557b, 0 0 80px #f9557b, 0 0 100px #f9557b;  */
+}
+
+/* ------------------ Navigation ----------------- */
+#nav1 {
+	top: 1rem;
+	left: 1rem;
+  text-transform: uppercase;
+  position:absolute;
+	
+	
+}
+#nav1 img {
+  width: 100px;
+	
+}
+
+#nav2 {
+	top: 1rem;
+	right: 1rem; 
+  line-height: 2rem;
+  position:absolute;
+}
+.icons {
+	padding: 0 0 1rem 0;
+}
+
+#nav3 {
+	bottom: 2rem;
+	text-transform: uppercase;
+  transform: rotate(270deg);
+  position:absolute;
+}
+
+#nav4 {
+	bottom: 1rem;
+	right: 1rem;
+  text-transform: uppercase;
+  position:absolute;
+}
+
+
+/* ------------------ INDEX FORM ----------------- */
+section {
+	display: none; 
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#content{
+	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#intro{
+width: 55%;
+text-align: center;
+	
+}
+
+.form-analyze {
+	text-align: left;
+	background-color: rgba(255,255,255,.2);
+	 -webkit-appearance: none;
+	height: 60px;
+	border: 0;
+	max-width: 610px;
+	padding: 0 20px 0 30px;
+	flex: 1;
+}
+
+
+button {
+	display: inline-block;
+	background: #333;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	padding: 22px 18px;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+	width: 50%;
+	font-size:1em;
+}
+
+
+.formfield {
+	display: inline-block;
+		width: 50%;
+		background: #fff;
+		color: #000;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+		border: 0;
+		outline: 0;
+		padding: 22px 18px;
+	}
+/* ------------------ REPORT GRAPHICS----------------- */
+.finalscoreform svg{
+	display: inline-block;
+	width: 20%;
+	margin-left:0.5%;
+}
+#finalscoretext {
+	fill: white;
+}
+#finalscoreform {
+	fill: #2B7A78;
+}
+#finalscore {
+	fill: white;
+}
+/* ------------------ CSS GRID REPORT ----------------- */
+
+.container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin:5%;
+  }
+  .item, .item-question, .item-result {
+    padding: 10px;
+  }
+  .title {
+	padding: 16vh;
+}
+  
+  .box-long {
+    grid-area: span 1 / span 4;
+  }
+  .box-short {
+    grid-area: span 1 / span 2;
+  }
+  .box-short2 {
+    grid-area: span 4 / span 1;
+  }
+  .box-info6 {
+   grid-area: span 7 / span 2;
+   background: #DEF2F1;
+   padding:12px;
+  }
+  
+  .box-info3 {
+   grid-area: span 4 / span 2;
+    background: #DEF2F1;
+    padding:12px;
+  }
+
+  /*type*/
+  .test-question{
+  line-height: 30px;
+  letter-spacing: 1px;
+  
+  }
+  .test-question:first-letter {
+      font-size: 2em;
+      margin-bottom: 3px;
+      letter-spacing: 2px;
+    }
+  .item-question, .item-result {
+    background-color:rgb(256,256,256,0.1);
+    border-top:1px solid #DEF2F1;
+  }
+  .box-info6 p, .box-info3 p {
+    padding: 5px 0px 5px 0px;
+  }
+
+  
+  
+  /* Responsive */
+  @media (max-width: 600px){
+	.container {
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: auto;
+	}
+	.box-long, .box-short, .box-info6, .box-info3{
+	  grid-area: span 1 / span 2;
+	}
+	.item-question, .item-result,  .box-long, .box-short, .box-info6, .box-info3{
+	  border: none;
+	}
+	.box-short{
+	  border-style:solid;
+	  border-color: #2B7A78;
+	 border-width: 12px 12px 0px 12px;
+  text-align:center;
+	}
+  .box-info6, .box-info3{
+	border-style:solid;
+	  border-color: #2B7A78;
+	 border-width: 0px 12px 0px 12px;   
+	}
+	.item-question {
+  border-left: 12px solid #2B7A78;
+	}
+	.item-result{
+  border-right: 12px solid #2B7A78;    
+	}
+.box-title {
+	border-style:solid;
+	  border-color: #2B7A78;
+	 border-width: 12px 12px 12px 12px; 
+	}
+  }
+/* ------------------ SCORE CIRCLES----------------- */
+  .circlediagram{
+  display: flex;
+align-items: center;
+justify-content: center;
+height: 50vh;
+  }
+  .circlediagram svg{
+    width: 100%;  
+  }
+
+  #circleBar-seo-mobile-text,
+  #circleBar-serp-view-text,
+  #circleBar-content-text,
+  #circleBar-page-speed-text,
+  #circleBar-social-links-text,
+  {
+	  font-size:1em;
+	  color:#feffff;
+	  fill:#feffff;
+  }
+  #circleBar-seo-mobile-scoretext,
+  #circleBar-serp-view-scoretext,
+  #circleBar-content-scoretext,
+  #circleBar-page-speed-scoretext,
+  #circleBar-social-links-scoretext,
+  {
+	  font-size:3em;
+	  color:#feffff;
+	  fill:#feffff;
+  }
+
+  #circleBar-seo-mobile-labels tspan,
+  #circleBar-serp-view-labels tspan,
+  #circleBar-content-labels tspan,
+  #circleBar-page-speed-labels tspan,
+  #circleBar-social-links-labels tspan,
+  {
+	  font-size:0.8em;
+	  color:#feffff;
+	  fill:#feffff;
+  }
+  
+  #circleBar-seo-mobile-values tspan,
+  #circleBar-serp-view-values tspan,
+  #circleBar-content-values tspan,
+  #circleBar-page-speed-values tspan,
+  #circleBar-social-links-values tspan{
+	  font-size: 15px;
+	  font-weight:bold;
+	  fill:#000;
+  }
+  #circleBar-seo-mobile-values tspan {
+	  fill: #3aafa9;
+  }
+  #circleBar-serp-view-values tspan {
+	  fill: #3aafa9;
+  }
+  #circleBar-content-values tspan {
+	  fill: #3aafa9;
+  }
+  #circleBar-page-speed-values tspan {
+	  fill: #3aafa9;
+  }
+  #circleBar-social-links-values tspan {
+	  fill: #3aafa9;
+  }
+/* ------------------ INFO TABS IN CSS GRID----------------- */
+section {
+    display: none;
+    padding: 20px 0 0;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-size: .7vw;
+  line-height: 30px;
+  letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  label:before {
+    font-family: fontawesome;
+    margin-right: 10px;
+    font-size: 2em;
+    margin-bottom:     1em;
+    letter-spacing: 2px;
+  }
+  
+  label[for*='1']:before { content: '\f10b'; } /* ---mobile--- */
+  label[for*='2']:before { content: '\f1a0'; } /* ---google--- */
+  label[for*='3']:before { content: '\f201'; } /* ---growth--- */
+  label[for*='4']:before { content: '\f0a1'; }/* ---bullhorn--- */
+  label[for*='5']:before { content: '\f06e'; }/* ---book reading--- */
+  label[for*='6']:before { content: '\f1b3'; } /* ---boxes--- */
+  label[for*='7']:before { content: '\f54c'; }
+  label[for*='8']:before { content: '\f65e'; }
+  label[for*='9']:before { content: '\f35e'; } /* ---growth--- */
+  label[for*='10']:before { content: '\f54c'; }
+  label[for*='11']:before { content: '\f65e'; }
+  label[for*='12']:before { content: '\f35e'; } /* ---growth--- */
+  label[for*='13']:before { content: '\f54c'; }
+  label[for*='14']:before { content: '\f65e'; }
+  label[for*='15']:before { content: '\f35e'; } /* ---growth--- */
+  
+  label:hover {
+    cursor: pointer;
+    border: 4px solid #2B7A78;
+  }
+  
+  input:checked + label {
+    border: 4px solid #2B7A78;
+  }
+  
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4,
+  #tab5:checked ~ #content5,
+  #tab6:checked ~ #content6,
+  #tab7:checked ~ #content7,
+  #tab8:checked ~ #content8,
+  #tab9:checked ~ #content9,
+  #tab10:checked ~ #content10,
+  #tab11:checked ~ #content11,
+  #tab12:checked ~ #content12,
+  #tab13:checked ~ #content13,
+  #tab14:checked ~ #content14,
+  #tab15:checked ~ #content15
+  {
+    display: block;
+  }
+
+/* ========== RESPONSIVE ========== */
+
+
+@media only screen and (max-width: 768px) {
+	label{
+		padding:5px 3px;
+		font-size:0.5em;
+		}
+
+}
